@@ -1,5 +1,6 @@
 import { Typography } from "@components/Typography";
 import Container, {
+  ButtonContainer,
   CardContainer,
   LoadingContainer,
   TitleContainer,
@@ -95,11 +96,13 @@ export default function Index() {
           <Typography variant="body1">Something went wrong!</Typography>
         )}
       </CardContainer>
-      <Button
-        disabled={isButtonDisabled}
-        title="Get A Quote"
-        onPress={handleSubmit(onSubmit)}
-      />
+      <ButtonContainer>
+        <Button
+          disabled={isButtonDisabled}
+          title="Get A Quote"
+          onPress={handleSubmit(onSubmit)}
+        />
+      </ButtonContainer>
     </Container>
   );
 }

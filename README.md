@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
+# Currency Conversion App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
 
-## Get started
+This project is a mobile cryptocurrency conversion app built using React Native, Expo, and TypeScript. The app is designed to allow users to view and convert different cryptocurrencies based on live exchange rates. The app is built for one screen where the user can input an amount, select a source currency, and then choose a destination currency to get a conversion quote.
 
-1. Install dependencies
+The app also utilizes Husky for precommit hooks, ensuring code quality and consistency during development. The application uses styled-components for styling and Axios for API calls to retrieve currency and market data.
 
-   ```bash
-   npm install
-   ```
+## Installation
 
-2. Start the app
+1. Clone the repository
 
-   ```bash
-    npx expo start
-   ```
+```sh
+git clone <repository_url>
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+cd <repository_directory>
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
 
-## Learn more
+Since the app uses Yarn as the package manager, you need to install dependencies with the following command:
 
-To learn more about developing your project with Expo, look at the following resources:
+```sh
+yarn install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3. Install Expo CLI
 
-## Join the community
+If you do not have Expo CLI installed globally, you can install it using the following command:
 
-Join our community of developers creating universal apps.
+```sh
+npm install -g expo-cli
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. Run the project
+
+Once all dependencies are installed, you can start the Expo project using the following command:
+
+```sh
+expo start
+```
+
+This will open the Expo development server, and you can scan the QR code with the Expo Go app on your mobile device to run the app.
+
+For more detailed information visit the expo documentation: https://docs.expo.dev/get-started/set-up-your-environment/
+
+## Features
+
+- Currency Conversion: Users can input an amount in one currency and get the equivalent amount in another currency.
+- Searchable Currency List: The app provides a searchable dropdown for selecting source and destination currencies.
+- Live Exchange Rates: The app fetches live exchange rates for various currencies.
+- Precommit Checks: Husky ensures pre-commit checks, including linting and formatting.
+- Responsive Design: Styled components are used to create a responsive and consistent UI.
+
+## Styling
+
+The app uses Styled Components for styling the UI. This approach allows for scoped and reusable styles tied directly to components.
+
+## API Integration
+
+The app uses Axios for making API calls. The API is used to fetch live currency, market and quote data.

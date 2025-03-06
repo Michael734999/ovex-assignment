@@ -25,4 +25,8 @@ export const CardContainer = styled.View`
   align-items: center;
 `;
 
+export const ButtonContainer = styled.View`
+  padding-vertical: ${({ theme }) => theme.spacing.m}px;
+`;
+
 export default Container;
