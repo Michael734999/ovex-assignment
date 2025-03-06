@@ -1,0 +1,16 @@
+{
+    "home": {
+        "title": "Convert Currency",
+        "input": {
+            "amount": {
+                "title": "Source amount"
+            },
+            "sourceCurrency": {
+                "title": "Source currency"
+            },
+            "destinationCurrency": {
+                "title": "Destination currency"
+            }
+        }
+    }
+}
